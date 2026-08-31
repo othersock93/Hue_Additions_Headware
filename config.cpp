@@ -20,11 +20,12 @@ class CfgPatches
 		author="Huenik";
 	};
 };
+
 class XtdGearModels
 {
 	class CfgWeapons
 	{
-		class ActualHeadware
+		class flight_helmets
 		{
 			label="Headware";
 			author="Huenik";
@@ -48,23 +49,17 @@ class XtdGearModels
 					"Pug"
 				};
 				class Huenik
-				{
-				};
+				{};
 				class Zero
-				{
-				};
+				{};
 				class Echo
-				{
-				};
+				{};
 				class Bobby
-				{
-				};
+				{};
 				class Dom
-				{
-				};
+				{};
 				class Pug
-				{
-				};
+				{};
 			};
 			class type
 			{
@@ -125,7 +120,7 @@ class XtdGearModels
 				values[]=
 				{
 					"NoFP",
-					"extraFP",
+					"Hawk2FP",
 					"HawkFP"
 				};
 				class NoFP
@@ -133,10 +128,10 @@ class XtdGearModels
 					label="";
 					description="No Patches";
 				};
-				class extraFP
+				class Hawk2FP
 				{
-					label="Extra";
-					description="Simply the framework for a new patch/patches";
+					label="Hawkeye V2";
+					description="V2 Hawkeye Patches";
 				};
 				class HawkFP
 				{
@@ -177,12 +172,12 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		ace_hearing_protection=0.85000002;
-		ace_hearing_lowerVolume=0.60000002;
+		ace_hearing_hasEHP = 1;
+		ace_hearing_lowerVolume=0.6;
 		class ItemInfo: HeadgearItem
 		{
 			mass=40;
-		uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
+			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
 			{
 				"camo",
@@ -194,32 +189,14 @@ class CfgWeapons
 				class Head
 				{
 					hitPointName="HitHead";
-					armor=999;
-					passThrough=0.001;
+					armor=15;
+					passThrough=0.5;
 				};
 				class Face
 				{
 					hitPointName="hitFace";
-					armor=999;
-					passThrough=0.001;
-				};
-				class Neck
-				{
-					hitPointName="HitNeck";
-					armor=999;
-					passThrough=0.001;
-				};
-				class Chest
-				{
-					hitPointName="hitchest";
-					armor=999;
-					passThrough=0.001;
-				};
-				class Body
-				{
-					hitPointName="hitbody";
-					armor=999;
-					passThrough=0.001;
+					armor=5;
+					passThrough=0.75;
 				};
 			};
 		};
@@ -229,6 +206,11 @@ class CfgWeapons
 			name="Huenik";
 		};
 	};
+
+////////////////////
+/// Huenik Helms ///
+////////////////////
+
 	class Huenik_H_NoFP_NoBP: FlightHelm_Base
 	{
 		displayName="Huenik";
@@ -250,7 +232,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 		uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -290,7 +272,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -330,7 +312,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -370,7 +352,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -414,7 +396,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -458,7 +440,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -499,7 +481,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -540,7 +522,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -581,7 +563,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -622,7 +604,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -663,7 +645,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -704,7 +686,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -745,7 +727,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -786,7 +768,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -827,7 +809,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 		uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -868,7 +850,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -887,6 +869,11 @@ class CfgWeapons
 			frontPatches="HawkFP";
 		};
 	};
+
+//////////////////
+/// Zero Helms ///
+//////////////////
+
 	class Zero_H_NoFP_NoBP: FlightHelm_Base
 	{
 		displayName="Zero";
@@ -908,7 +895,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -948,7 +935,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -988,7 +975,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -1028,7 +1015,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -1069,7 +1056,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -1110,7 +1097,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -1151,7 +1138,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -1192,7 +1179,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -1233,7 +1220,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -1274,7 +1261,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -1315,7 +1302,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -1356,7 +1343,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -1397,7 +1384,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -1438,7 +1425,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -1479,7 +1466,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -1520,7 +1507,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -1539,6 +1526,11 @@ class CfgWeapons
 			frontPatches="HawkFP";
 		};
 	};
+
+//////////////////
+/// Echo Helms ///
+//////////////////
+
 	class Echo_H_NoFP_NoBP: FlightHelm_Base
 	{
 		displayName="Echo";
@@ -1560,7 +1552,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -1600,7 +1592,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -1640,7 +1632,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -1680,7 +1672,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -1721,7 +1713,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -1762,7 +1754,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -1803,7 +1795,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -1844,7 +1836,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -1885,7 +1877,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -1926,7 +1918,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -1967,7 +1959,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -2008,7 +2000,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -2049,7 +2041,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -2090,7 +2082,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -2131,7 +2123,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -2172,7 +2164,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -2191,6 +2183,11 @@ class CfgWeapons
 			frontPatches="HawkFP";
 		};
 	};
+
+///////////////////
+/// Bobby Helms ///
+///////////////////
+
 	class Bobby_H_NoFP_NoBP: FlightHelm_Base
 	{
 		displayName="Bobby";
@@ -2212,7 +2209,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -2252,7 +2249,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -2292,7 +2289,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -2332,7 +2329,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -2373,7 +2370,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -2414,7 +2411,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -2455,7 +2452,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -2496,7 +2493,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -2537,7 +2534,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -2578,7 +2575,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -2619,7 +2616,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -2660,7 +2657,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -2701,7 +2698,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -2742,7 +2739,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -2783,7 +2780,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -2824,7 +2821,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -2843,6 +2840,11 @@ class CfgWeapons
 			frontPatches="HawkFP";
 		};
 	};
+
+/////////////////
+/// Dom Helms ///
+/////////////////
+
 	class Dom_H_NoFP_NoBP: FlightHelm_Base
 	{
 		displayName="Domscar";
@@ -2864,7 +2866,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -2908,7 +2910,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -2952,7 +2954,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -2996,7 +2998,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -3041,7 +3043,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -3086,7 +3088,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -3131,7 +3133,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -3176,7 +3178,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -3221,7 +3223,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -3266,7 +3268,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -3311,7 +3313,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -3356,7 +3358,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -3401,7 +3403,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -3446,7 +3448,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -3491,7 +3493,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -3536,7 +3538,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -3559,7 +3561,11 @@ class CfgWeapons
 			frontPatches="HawkFP";
 		};
 	};
-//
+
+//////////////////////
+/// WarCryme Helms ///
+//////////////////////
+
 	class WarCryme_H_NoFP_NoBP: FlightHelm_Base
 	{
 		displayName="WarCryme";
@@ -3581,7 +3587,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -3625,7 +3631,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -3669,7 +3675,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -3713,7 +3719,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -3758,7 +3764,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -3803,7 +3809,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -3848,7 +3854,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -3893,7 +3899,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -3938,7 +3944,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -3983,7 +3989,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -4028,7 +4034,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -4073,7 +4079,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -4118,7 +4124,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -4163,7 +4169,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -4208,7 +4214,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -4253,7 +4259,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -4276,6 +4282,11 @@ class CfgWeapons
 			frontPatches="HawkFP";
 		};
 	};
+
+/////////////////
+/// Pug Helms ///
+/////////////////
+
 	class Pug_H_NoFP_NoBP: FlightHelm_Base
 	{
 		displayName="Pug";
@@ -4297,7 +4308,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -4341,7 +4352,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -4385,7 +4396,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -4429,7 +4440,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_base.p3d";
 			hiddenSelections[]=
@@ -4474,7 +4485,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -4519,7 +4530,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -4564,7 +4575,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -4609,7 +4620,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask.p3d";
 			hiddenSelections[]=
@@ -4654,7 +4665,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -4699,7 +4710,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -4744,7 +4755,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -4789,7 +4800,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 			hiddenSelections[]=
@@ -4834,7 +4845,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -4879,7 +4890,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\blankBackPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -4924,7 +4935,7 @@ class CfgWeapons
 			"",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -4969,7 +4980,7 @@ class CfgWeapons
 			"Hue_Additions_Headware\Data\Hawkeye.rvmat",
 			"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 		};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="Hue_Additions_Headware\Models\helmet_visor.p3d";
 			hiddenSelections[]=
@@ -4993,7 +5004,11 @@ class CfgWeapons
 		};
 	};
 	
-	//
+
+//////////////////
+/// 207 Berets ///
+//////////////////
+
 	class H_Beret_02;
 	class V_207_Beret: H_Beret_02
 	{
@@ -5016,6 +5031,7 @@ class CfgWeapons
 		editorSubcategory="EdSubcat_Hats";
 		class ItemInfo: HeadgearItem
 		{
+			allowedSlots[] = {801,901,701,605};
 			mass=1;
 			uniformModel="A3\characters_f_epb\BLUFOR\headgear_beret02.p3d";
 			hiddenSelections[]=
@@ -5049,6 +5065,7 @@ class CfgWeapons
 		editorSubcategory="EdSubcat_Hats";
 		class ItemInfo: HeadgearItem
 		{
+			allowedSlots[] = {801,901,701,605};
 			mass=1;
 			uniformModel="A3\characters_f_epb\BLUFOR\headgear_beret02.p3d";
 			hiddenSelections[]=
@@ -5082,6 +5099,7 @@ class CfgWeapons
 		editorSubcategory="EdSubcat_Hats";
 		class ItemInfo: HeadgearItem
 		{
+			allowedSlots[] = {801,901,701,605};
 			mass=1;
 			uniformModel="A3\characters_f_epb\BLUFOR\headgear_beret02.p3d";
 			hiddenSelections[]=
@@ -5116,6 +5134,7 @@ class CfgWeapons
 		editorSubcategory="EdSubcat_Hats";
 		class ItemInfo: HeadgearItem
 		{
+			allowedSlots[] = {801,901,701,605};
 			mass=1;
 			uniformModel="A3\characters_f_epb\BLUFOR\headgear_beret02.p3d";
 			hiddenSelections[]=
@@ -5149,6 +5168,7 @@ class CfgWeapons
 		editorSubcategory="EdSubcat_Hats";
 		class ItemInfo: HeadgearItem
 		{
+			allowedSlots[] = {801,901,701,605};
 			mass=1;
 			uniformModel="A3\characters_f_epb\BLUFOR\headgear_beret02.p3d";
 			hiddenSelections[]=
@@ -5182,6 +5202,7 @@ class CfgWeapons
 		editorSubcategory="EdSubcat_Hats";
 		class ItemInfo: HeadgearItem
 		{
+			allowedSlots[] = {801,901,701,605};
 			mass=1;
 			uniformModel="A3\characters_f_epb\BLUFOR\headgear_beret02.p3d";
 			hiddenSelections[]=
@@ -5215,6 +5236,7 @@ class CfgWeapons
 		editorSubcategory="EdSubcat_Hats";
 		class ItemInfo: HeadgearItem
 		{
+			allowedSlots[] = {801,901,701,605};
 			mass=1;
 			uniformModel="A3\characters_f_epb\BLUFOR\headgear_beret02.p3d";
 			hiddenSelections[]=
