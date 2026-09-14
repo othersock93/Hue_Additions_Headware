@@ -144,6 +144,7 @@ class XtdGearModels
 };
 class CfgWeapons
 {
+#include "hawk2.hpp"
 	class ItemCore;
 	class HeadgearItem;
 	class H_HelmetB;
