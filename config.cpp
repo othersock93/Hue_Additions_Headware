@@ -123,23 +123,23 @@ class XtdGearModels
 				values[]=
 				{
 					"NoFP",
-					"HawkFP2",
-					"HawkFP"
+					"HawkFP",
+					"HawkFP2"
 				};
 				class NoFP
 				{
 					label="None";
 					description="No Patches";
 				};
-				class HawkFP2
-				{
-					label="Hawkeye V2";
-					description="V2 Hawkeye Patches";
-				};
 				class HawkFP
 				{
 					label="Hawkeye";
 					description="Hawkeye Patches";
+				};
+				class HawkFP2
+				{
+					label="Hawkeye V2";
+					description="V2 Hawkeye Patches";
 				};
 			};
 		};
