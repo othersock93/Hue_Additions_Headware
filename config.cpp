@@ -107,7 +107,7 @@ class XtdGearModels
 				};
 				class NoBP
 				{
-					label="";
+					label="None";
 					description="No Patches";
 				};
 				class AUS_IR
@@ -128,7 +128,7 @@ class XtdGearModels
 				};
 				class NoFP
 				{
-					label="";
+					label="None";
 					description="No Patches";
 				};
 				class HawkFP2
@@ -153,7 +153,7 @@ class CfgWeapons
 	class FlightHelm_Base : H_HelmetB
 	{
 		author="Huenik";
-		scope=2;
+		scope=0;
 		displayName="Huenik";
 		picture="Hue_Additions_Headware\UI\vanilla_ui.paa";
 		model="Hue_Additions_Headware\Models\helmet_base.p3d";
@@ -207,6 +207,9 @@ class CfgWeapons
 		{
 			model="flight_helmets";
 			name="Huenik";
+			type="Base";
+			backPatches="NoBP";
+			frontPatches="NoFP";
 		};
 	};
 
@@ -218,6 +221,7 @@ class CfgWeapons
 
 	class Huenik_H_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Huenik";
 		hiddenSelections[]=
 		{
@@ -258,6 +262,7 @@ class CfgWeapons
 	};
 	class Huenik_H_HawkFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Huenik15H";
 		hiddenSelections[]=
 		{
@@ -298,6 +303,7 @@ class CfgWeapons
 	};
 	class Huenik_H_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Huenik AUS";
 		hiddenSelections[]=
 		{
@@ -338,6 +344,7 @@ class CfgWeapons
 	};
 	class Huenik_H_HawkFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Huenik AUS 15H";
 		hiddenSelections[]=
 		{
@@ -366,6 +373,7 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
+		};
 		class XtdGearInfo
 		{
 			model="flight_helmets";
@@ -375,9 +383,9 @@ class CfgWeapons
 			frontPatches="HawkFP";
 		};
 	};
-	};
 	class Huenik_H_M_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Huenik M";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -407,6 +415,7 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
+		};
 		class XtdGearInfo
 		{
 			model="flight_helmets";
@@ -416,9 +425,9 @@ class CfgWeapons
 			frontPatches="NoFP";
 		};
 	};
-	};
 	class Huenik_H_M_HawkFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Huenik M 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -460,6 +469,7 @@ class CfgWeapons
 	};
 	class Huenik_H_M_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Huenik M AUS Patch";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -501,6 +511,7 @@ class CfgWeapons
 	};
 	class Huenik_H_M_HawkFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Huenik M AUS 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -542,6 +553,7 @@ class CfgWeapons
 	};
 	class Huenik_H_M_V_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Huenik MV";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
@@ -583,6 +595,7 @@ class CfgWeapons
 	};
 	class Huenik_H_M_V_HawkFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Huenik MV 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
@@ -624,6 +637,7 @@ class CfgWeapons
 	};
 	class Huenik_H_M_V_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Huenik MV AUS";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
@@ -665,6 +679,7 @@ class CfgWeapons
 	};
 	class Huenik_H_M_V_HawkFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="! Huenik MV AUS 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
@@ -706,6 +721,7 @@ class CfgWeapons
 	};
 	class Huenik_H_V_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Huenik V";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -747,6 +763,7 @@ class CfgWeapons
 	};
 	class Huenik_H_V_HawkFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Huenik V 15H";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -788,6 +805,7 @@ class CfgWeapons
 	};
 	class Huenik_H_V_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Huenik V AUS Patch";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -829,6 +847,7 @@ class CfgWeapons
 	};
 	class Huenik_H_V_HawkFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Huenik V AUS 15H";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -875,6 +894,7 @@ class CfgWeapons
 
 	class Zero_H_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Zero";
 		hiddenSelections[]=
 		{
@@ -915,6 +935,7 @@ class CfgWeapons
 	};
 	class Zero_H_HawkFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Zero15H";
 		hiddenSelections[]=
 		{
@@ -955,6 +976,7 @@ class CfgWeapons
 	};
 	class Zero_H_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Zero AUS";
 		hiddenSelections[]=
 		{
@@ -995,6 +1017,7 @@ class CfgWeapons
 	};
 	class Zero_H_HawkFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Zero AUS 15H";
 		hiddenSelections[]=
 		{
@@ -1035,6 +1058,7 @@ class CfgWeapons
 	};
 	class Zero_H_M_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Zero M";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -1076,6 +1100,7 @@ class CfgWeapons
 	};
 	class Zero_H_M_HawkFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Zero M 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -1117,6 +1142,7 @@ class CfgWeapons
 	};
 	class Zero_H_M_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Zero M AUS Patch";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -1158,6 +1184,7 @@ class CfgWeapons
 	};
 	class Zero_H_M_HawkFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Zero M AUS 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -1199,6 +1226,7 @@ class CfgWeapons
 	};
 	class Zero_H_M_V_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Zero MV";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
@@ -1240,6 +1268,7 @@ class CfgWeapons
 	};
 	class Zero_H_M_V_HawkFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Zero MV 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
@@ -1281,6 +1310,7 @@ class CfgWeapons
 	};
 	class Zero_H_M_V_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Zero MV AUS";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
@@ -1322,7 +1352,8 @@ class CfgWeapons
 	};
 	class Zero_H_M_V_HawkFP_AUS: FlightHelm_Base
 	{
-		displayName="! Zero MV AUS 15H";
+		scope=2;
+		displayName="Zero MV AUS 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
 		{
@@ -1363,6 +1394,7 @@ class CfgWeapons
 	};
 	class Zero_H_V_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Zero V";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -1404,6 +1436,7 @@ class CfgWeapons
 	};
 	class Zero_H_V_HawkFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Zero V 15H";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -1445,6 +1478,7 @@ class CfgWeapons
 	};
 	class Zero_H_V_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Zero V AUS Patch";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -1486,6 +1520,7 @@ class CfgWeapons
 	};
 	class Zero_H_V_HawkFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Zero V AUS 15H";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -1532,6 +1567,7 @@ class CfgWeapons
 
 	class Echo_H_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Echo";
 		hiddenSelections[]=
 		{
@@ -1572,6 +1608,7 @@ class CfgWeapons
 	};
 	class Echo_H_HawkFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Echo15H";
 		hiddenSelections[]=
 		{
@@ -1612,6 +1649,7 @@ class CfgWeapons
 	};
 	class Echo_H_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Echo AUS";
 		hiddenSelections[]=
 		{
@@ -1652,6 +1690,7 @@ class CfgWeapons
 	};
 	class Echo_H_HawkFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Echo AUS 15H";
 		hiddenSelections[]=
 		{
@@ -1692,6 +1731,7 @@ class CfgWeapons
 	};
 	class Echo_H_M_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Echo M";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -1733,6 +1773,7 @@ class CfgWeapons
 	};
 	class Echo_H_M_HawkFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Echo M 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -1774,6 +1815,7 @@ class CfgWeapons
 	};
 	class Echo_H_M_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Echo M AUS Patch";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -1815,6 +1857,7 @@ class CfgWeapons
 	};
 	class Echo_H_M_HawkFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Echo M AUS 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -1856,6 +1899,7 @@ class CfgWeapons
 	};
 	class Echo_H_M_V_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Echo MV";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
@@ -1897,6 +1941,7 @@ class CfgWeapons
 	};
 	class Echo_H_M_V_HawkFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Echo MV 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
@@ -1938,6 +1983,7 @@ class CfgWeapons
 	};
 	class Echo_H_M_V_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Echo MV AUS";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
@@ -1979,6 +2025,7 @@ class CfgWeapons
 	};
 	class Echo_H_M_V_HawkFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="! Echo MV AUS 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
@@ -2020,6 +2067,7 @@ class CfgWeapons
 	};
 	class Echo_H_V_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Echo V";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -2061,6 +2109,7 @@ class CfgWeapons
 	};
 	class Echo_H_V_HawkFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Echo V 15H";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -2102,6 +2151,7 @@ class CfgWeapons
 	};
 	class Echo_H_V_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Echo V AUS Patch";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -2143,6 +2193,7 @@ class CfgWeapons
 	};
 	class Echo_H_V_HawkFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Echo V AUS 15H";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -2189,6 +2240,7 @@ class CfgWeapons
 
 	class Bobby_H_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Bobby";
 		hiddenSelections[]=
 		{
@@ -2229,6 +2281,7 @@ class CfgWeapons
 	};
 	class Bobby_H_HawkFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Bobby15H";
 		hiddenSelections[]=
 		{
@@ -2269,6 +2322,7 @@ class CfgWeapons
 	};
 	class Bobby_H_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Bobby AUS";
 		hiddenSelections[]=
 		{
@@ -2309,6 +2363,7 @@ class CfgWeapons
 	};
 	class Bobby_H_HawkFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Bobby AUS 15H";
 		hiddenSelections[]=
 		{
@@ -2349,6 +2404,7 @@ class CfgWeapons
 	};
 	class Bobby_H_M_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Bobby M";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -2390,6 +2446,7 @@ class CfgWeapons
 	};
 	class Bobby_H_M_HawkFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Bobby M 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -2431,6 +2488,7 @@ class CfgWeapons
 	};
 	class Bobby_H_M_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Bobby M AUS Patch";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -2472,6 +2530,7 @@ class CfgWeapons
 	};
 	class Bobby_H_M_HawkFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Bobby M AUS 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -2513,6 +2572,7 @@ class CfgWeapons
 	};
 	class Bobby_H_M_V_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Bobby MV";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
@@ -2554,6 +2614,7 @@ class CfgWeapons
 	};
 	class Bobby_H_M_V_HawkFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Bobby MV 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
@@ -2595,6 +2656,7 @@ class CfgWeapons
 	};
 	class Bobby_H_M_V_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Bobby MV AUS";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
@@ -2636,7 +2698,8 @@ class CfgWeapons
 	};
 	class Bobby_H_M_V_HawkFP_AUS: FlightHelm_Base
 	{
-		displayName="! Bobby MV AUS 15H";
+		scope=2;
+		displayName="Bobby MV AUS 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
 		{
@@ -2677,6 +2740,7 @@ class CfgWeapons
 	};
 	class Bobby_H_V_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Bobby V";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -2718,6 +2782,7 @@ class CfgWeapons
 	};
 	class Bobby_H_V_HawkFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Bobby V 15H";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -2759,6 +2824,7 @@ class CfgWeapons
 	};
 	class Bobby_H_V_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Bobby V AUS Patch";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -2800,6 +2866,7 @@ class CfgWeapons
 	};
 	class Bobby_H_V_HawkFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Bobby V AUS 15H";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -2846,6 +2913,7 @@ class CfgWeapons
 
 	class Dom_H_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Domscar";
 		hiddenSelections[]=
 		{
@@ -2886,7 +2954,8 @@ class CfgWeapons
 	};
 	class Dom_H_HawkFP_NoBP: FlightHelm_Base
 	{
-		displayName="Domscar15H";
+		scope=2;
+		displayName="Domscar 15H";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -2926,6 +2995,7 @@ class CfgWeapons
 	};
 	class Dom_H_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Domscar AUS";
 		hiddenSelections[]=
 		{
@@ -2966,6 +3036,7 @@ class CfgWeapons
 	};
 	class Dom_H_HawkFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Domscar AUS 15H";
 		hiddenSelections[]=
 		{
@@ -3006,6 +3077,7 @@ class CfgWeapons
 	};
 	class Dom_H_M_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Domscar M";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -3047,6 +3119,7 @@ class CfgWeapons
 	};
 	class Dom_H_M_HawkFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Domscar M 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -3088,6 +3161,7 @@ class CfgWeapons
 	};
 	class Dom_H_M_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Domscar M AUS Patch";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -3129,6 +3203,7 @@ class CfgWeapons
 	};
 	class Dom_H_M_HawkFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Domscar M AUS 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -3170,6 +3245,7 @@ class CfgWeapons
 	};
 	class Dom_H_M_V_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Domscar MV";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
@@ -3211,6 +3287,7 @@ class CfgWeapons
 	};
 	class Dom_H_M_V_HawkFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Domscar MV 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
@@ -3252,6 +3329,7 @@ class CfgWeapons
 	};
 	class Dom_H_M_V_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Domscar MV AUS";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
@@ -3293,7 +3371,8 @@ class CfgWeapons
 	};
 	class Dom_H_M_V_HawkFP_AUS: FlightHelm_Base
 	{
-		displayName="! Domscar MV AUS 15H";
+		scope=2;
+		displayName="Domscar MV AUS 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
 		{
@@ -3334,6 +3413,7 @@ class CfgWeapons
 	};
 	class Dom_H_V_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Domscar V";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -3375,6 +3455,7 @@ class CfgWeapons
 	};
 	class Dom_H_V_HawkFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Domscar V 15H";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -3416,6 +3497,7 @@ class CfgWeapons
 	};
 	class Dom_H_V_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Domscar V AUS Patch";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -3457,6 +3539,7 @@ class CfgWeapons
 	};
 	class Dom_H_V_HawkFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Domscar V AUS 15H";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -3503,6 +3586,7 @@ class CfgWeapons
 
 	class WarCryme_H_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="WarCryme";
 		hiddenSelections[]=
 		{
@@ -3543,6 +3627,7 @@ class CfgWeapons
 	};
 	class WarCryme_H_HawkFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="WarCryme 15H";
 		hiddenSelections[]=
 		{
@@ -3583,6 +3668,7 @@ class CfgWeapons
 	};
 	class WarCryme_H_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="WarCryme AUS";
 		hiddenSelections[]=
 		{
@@ -3623,6 +3709,7 @@ class CfgWeapons
 	};
 	class WarCryme_H_HawkFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="WarCryme AUS 15H";
 		hiddenSelections[]=
 		{
@@ -3663,6 +3750,7 @@ class CfgWeapons
 	};
 	class WarCryme_H_M_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="WarCryme M";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -3704,6 +3792,7 @@ class CfgWeapons
 	};
 	class WarCryme_H_M_HawkFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="WarCryme M 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -3745,6 +3834,7 @@ class CfgWeapons
 	};
 	class WarCryme_H_M_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="WarCryme M AUS Patch";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -3786,6 +3876,7 @@ class CfgWeapons
 	};
 	class WarCryme_H_M_HawkFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="WarCryme M AUS 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -3827,6 +3918,7 @@ class CfgWeapons
 	};
 	class WarCryme_H_M_V_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="WarCryme MV";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
@@ -3909,6 +4001,7 @@ class CfgWeapons
 	};
 	class WarCryme_H_M_V_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="WarCryme MV AUS";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
@@ -3950,7 +4043,8 @@ class CfgWeapons
 	};
 	class WarCryme_H_M_V_HawkFP_AUS: FlightHelm_Base
 	{
-		displayName="! WarCryme MV AUS 15H";
+		scope=2;
+		displayName="WarCryme MV AUS 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
 		{
@@ -3991,6 +4085,7 @@ class CfgWeapons
 	};
 	class WarCryme_H_V_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="WarCryme V";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -4032,6 +4127,7 @@ class CfgWeapons
 	};
 	class WarCryme_H_V_HawkFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="WarCryme V 15H";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -4073,6 +4169,7 @@ class CfgWeapons
 	};
 	class WarCryme_H_V_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="WarCryme V AUS Patch";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -4114,6 +4211,7 @@ class CfgWeapons
 	};
 	class WarCryme_H_V_HawkFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="WarCryme V AUS 15H";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -4160,6 +4258,7 @@ class CfgWeapons
 
 	class Pug_H_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Pug";
 		hiddenSelections[]=
 		{
@@ -4200,6 +4299,7 @@ class CfgWeapons
 	};
 	class Pug_H_HawkFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Pug 15H";
 		hiddenSelections[]=
 		{
@@ -4240,6 +4340,7 @@ class CfgWeapons
 	};
 	class Pug_H_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Pug AUS";
 		hiddenSelections[]=
 		{
@@ -4280,6 +4381,7 @@ class CfgWeapons
 	};
 	class Pug_H_HawkFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Pug AUS 15H";
 		hiddenSelections[]=
 		{
@@ -4320,6 +4422,7 @@ class CfgWeapons
 	};
 	class Pug_H_M_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Pug M";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -4361,6 +4464,7 @@ class CfgWeapons
 	};
 	class Pug_H_M_HawkFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Pug M 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -4402,6 +4506,7 @@ class CfgWeapons
 	};
 	class Pug_H_M_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Pug M AUS Patch";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -4443,6 +4548,7 @@ class CfgWeapons
 	};
 	class Pug_H_M_HawkFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Pug M AUS 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask.p3d";
 		hiddenSelections[]=
@@ -4484,6 +4590,7 @@ class CfgWeapons
 	};
 	class Pug_H_M_V_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Pug MV";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
@@ -4525,6 +4632,7 @@ class CfgWeapons
 	};
 	class Pug_H_M_V_HawkFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Pug MV 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
@@ -4566,6 +4674,7 @@ class CfgWeapons
 	};
 	class Pug_H_M_V_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Pug MV AUS";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
@@ -4607,7 +4716,8 @@ class CfgWeapons
 	};
 	class Pug_H_M_V_HawkFP_AUS: FlightHelm_Base
 	{
-		displayName="! Pug MV AUS 15H";
+		scope=2;
+		displayName="Pug MV AUS 15H";
 		model="Hue_Additions_Headware\Models\helmet_mask_visor.p3d";
 		hiddenSelections[]=
 		{
@@ -4648,6 +4758,7 @@ class CfgWeapons
 	};
 	class Pug_H_V_NoFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Pug V";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -4689,6 +4800,7 @@ class CfgWeapons
 	};
 	class Pug_H_V_HawkFP_NoBP: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Pug V 15H";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -4730,6 +4842,7 @@ class CfgWeapons
 	};
 	class Pug_H_V_NoFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Pug V AUS Patch";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
@@ -4771,6 +4884,7 @@ class CfgWeapons
 	};
 	class Pug_H_V_HawkFP_AUS: FlightHelm_Base
 	{
+		scope=2;
 		displayName="Pug V AUS 15H";
 		model="Hue_Additions_Headware\Models\helmet_visor.p3d";
 		hiddenSelections[]=
