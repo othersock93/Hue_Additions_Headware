@@ -144,7 +144,6 @@ class XtdGearModels
 };
 class CfgWeapons
 {
-#include "hawk2.hpp"
 	class ItemCore;
 	class HeadgearItem;
 	class H_HelmetB;
@@ -207,6 +206,8 @@ class CfgWeapons
 			name="Huenik";
 		};
 	};
+
+#include "hawk2.hpp"
 
 ////////////////////
 /// Huenik Helms ///
