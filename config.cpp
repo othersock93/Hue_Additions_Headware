@@ -45,6 +45,7 @@ class XtdGearModels
 					"Zero",
 					"Echo",
 					"Bobby",
+					"War",
 					"Dom",
 					"Pug"
 				};
@@ -57,6 +58,8 @@ class XtdGearModels
 				class Bobby
 				{};
 				class Dom
+				{};
+				class War
 				{};
 				class Pug
 				{};
@@ -120,7 +123,7 @@ class XtdGearModels
 				values[]=
 				{
 					"NoFP",
-					"Hawk2FP",
+					"HawkFP2",
 					"HawkFP"
 				};
 				class NoFP
@@ -128,7 +131,7 @@ class XtdGearModels
 					label="";
 					description="No Patches";
 				};
-				class Hawk2FP
+				class HawkFP2
 				{
 					label="Hawkeye V2";
 					description="V2 Hawkeye Patches";
@@ -363,9 +366,6 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-		};
 		class XtdGearInfo
 		{
 			model="flight_helmets";
@@ -407,9 +407,6 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-		};
 		class XtdGearInfo
 		{
 			model="flight_helmets";
@@ -2877,10 +2874,6 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
@@ -2920,10 +2913,6 @@ class CfgWeapons
 				"camo",
 				"patches",
 				"backPatches"
-			};
-			class HitPointsProtectionInfo
-			{
-			
 			};
 		};
 		class XtdGearInfo
@@ -2965,10 +2954,6 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
@@ -3008,10 +2993,6 @@ class CfgWeapons
 				"camo",
 				"patches",
 				"backPatches"
-			};
-			class HitPointsProtectionInfo
-			{
-			
 			};
 		};
 		class XtdGearInfo
@@ -3054,10 +3035,6 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
@@ -3098,10 +3075,6 @@ class CfgWeapons
 				"camo",
 				"patches",
 				"backPatches"
-			};
-			class HitPointsProtectionInfo
-			{
-			
 			};
 		};
 		class XtdGearInfo
@@ -3144,10 +3117,6 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
@@ -3188,10 +3157,6 @@ class CfgWeapons
 				"camo",
 				"patches",
 				"backPatches"
-			};
-			class HitPointsProtectionInfo
-			{
-			
 			};
 		};
 		class XtdGearInfo
@@ -3234,10 +3199,6 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
@@ -3278,10 +3239,6 @@ class CfgWeapons
 				"camo",
 				"patches",
 				"backPatches"
-			};
-			class HitPointsProtectionInfo
-			{
-			
 			};
 		};
 		class XtdGearInfo
@@ -3324,10 +3281,6 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
@@ -3368,10 +3321,6 @@ class CfgWeapons
 				"camo",
 				"patches",
 				"backPatches"
-			};
-			class HitPointsProtectionInfo
-			{
-			
 			};
 		};
 		class XtdGearInfo
@@ -3414,10 +3363,6 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
@@ -3458,10 +3403,6 @@ class CfgWeapons
 				"camo",
 				"patches",
 				"backPatches"
-			};
-			class HitPointsProtectionInfo
-			{
-			
 			};
 		};
 		class XtdGearInfo
@@ -3504,10 +3445,6 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
@@ -3548,10 +3485,6 @@ class CfgWeapons
 				"camo",
 				"patches",
 				"backPatches"
-			};
-			class HitPointsProtectionInfo
-			{
-			
 			};
 		};
 		class XtdGearInfo
@@ -3598,15 +3531,11 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
 			model="flight_helmets";
-			name="Dom";
+			name="War";
 			type="Base";
 			backPatches="NoBP";
 			frontPatches="NoFP";
@@ -3642,15 +3571,11 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
 			model="flight_helmets";
-			name="Dom";
+			name="War";
 			type="Base";
 			backPatches="NoBP";
 			frontPatches="HawkFP";
@@ -3686,15 +3611,11 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
 			model="flight_helmets";
-			name="Dom";
+			name="War";
 			type="Base";
 			backPatches="AUS_IR";
 			frontPatches="NoFP";
@@ -3730,15 +3651,11 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
 			model="flight_helmets";
-			name="Dom";
+			name="War";
 			type="Base";
 			backPatches="AUS_IR";
 			frontPatches="HawkFP";
@@ -3775,15 +3692,11 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
 			model="flight_helmets";
-			name="Dom";
+			name="War";
 			type="Mask";
 			backPatches="NoBP";
 			frontPatches="NoFP";
@@ -3820,15 +3733,11 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
 			model="flight_helmets";
-			name="Dom";
+			name="War";
 			type="Mask";
 			backPatches="NoBP";
 			frontPatches="HawkFP";
@@ -3865,15 +3774,11 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
 			model="flight_helmets";
-			name="Dom";
+			name="War";
 			type="Mask";
 			backPatches="AUS_IR";
 			frontPatches="NoFP";
@@ -3910,15 +3815,11 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
 			model="flight_helmets";
-			name="Dom";
+			name="War";
 			type="Mask";
 			backPatches="AUS_IR";
 			frontPatches="HawkFP";
@@ -3955,15 +3856,11 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
 			model="flight_helmets";
-			name="Dom";
+			name="War";
 			type="MaskVisor";
 			backPatches="NoBP";
 			frontPatches="NoFP";
@@ -4000,15 +3897,11 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
 			model="flight_helmets";
-			name="Dom";
+			name="War";
 			type="MaskVisor";
 			backPatches="NoBP";
 			frontPatches="HawkFP";
@@ -4045,15 +3938,11 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
 			model="flight_helmets";
-			name="Dom";
+			name="War";
 			type="MaskVisor";
 			backPatches="AUS_IR";
 			frontPatches="NoFP";
@@ -4090,15 +3979,11 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
 			model="flight_helmets";
-			name="Dom";
+			name="War";
 			type="MaskVisor";
 			backPatches="AUS_IR";
 			frontPatches="HawkFP";
@@ -4135,15 +4020,11 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
 			model="flight_helmets";
-			name="Dom";
+			name="War";
 			type="Visor";
 			backPatches="NoBP";
 			frontPatches="NoFP";
@@ -4180,15 +4061,11 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
 			model="flight_helmets";
-			name="Dom";
+			name="War";
 			type="Visor";
 			backPatches="NoBP";
 			frontPatches="HawkFP";
@@ -4225,15 +4102,11 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
 			model="flight_helmets";
-			name="Dom";
+			name="War";
 			type="Visor";
 			backPatches="AUS_IR";
 			frontPatches="NoFP";
@@ -4270,15 +4143,11 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
 			model="flight_helmets";
-			name="Dom";
+			name="War";
 			type="Visor";
 			backPatches="AUS_IR";
 			frontPatches="HawkFP";
@@ -4318,10 +4187,6 @@ class CfgWeapons
 				"camo",
 				"patches",
 				"backPatches"
-			};
-			class HitPointsProtectionInfo
-			{
-			
 			};
 		};
 		class XtdGearInfo
@@ -4363,10 +4228,6 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
@@ -4407,10 +4268,6 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
@@ -4450,10 +4307,6 @@ class CfgWeapons
 				"camo",
 				"patches",
 				"backPatches"
-			};
-			class HitPointsProtectionInfo
-			{
-			
 			};
 		};
 		class XtdGearInfo
@@ -4496,10 +4349,6 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
@@ -4540,10 +4389,6 @@ class CfgWeapons
 				"camo",
 				"patches",
 				"backPatches"
-			};
-			class HitPointsProtectionInfo
-			{
-			
 			};
 		};
 		class XtdGearInfo
@@ -4586,10 +4431,6 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
@@ -4630,10 +4471,6 @@ class CfgWeapons
 				"camo",
 				"patches",
 				"backPatches"
-			};
-			class HitPointsProtectionInfo
-			{
-			
 			};
 		};
 		class XtdGearInfo
@@ -4676,10 +4513,6 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
@@ -4720,10 +4553,6 @@ class CfgWeapons
 				"camo",
 				"patches",
 				"backPatches"
-			};
-			class HitPointsProtectionInfo
-			{
-			
 			};
 		};
 		class XtdGearInfo
@@ -4766,10 +4595,6 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
@@ -4810,10 +4635,6 @@ class CfgWeapons
 				"camo",
 				"patches",
 				"backPatches"
-			};
-			class HitPointsProtectionInfo
-			{
-			
 			};
 		};
 		class XtdGearInfo
@@ -4856,10 +4677,6 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
@@ -4900,10 +4717,6 @@ class CfgWeapons
 				"camo",
 				"patches",
 				"backPatches"
-			};
-			class HitPointsProtectionInfo
-			{
-			
 			};
 		};
 		class XtdGearInfo
@@ -4946,10 +4759,6 @@ class CfgWeapons
 				"patches",
 				"backPatches"
 			};
-			class HitPointsProtectionInfo
-			{
-			
-			};
 		};
 		class XtdGearInfo
 		{
@@ -4990,10 +4799,6 @@ class CfgWeapons
 				"camo",
 				"patches",
 				"backPatches"
-			};
-			class HitPointsProtectionInfo
-			{
-			
 			};
 		};
 		class XtdGearInfo
