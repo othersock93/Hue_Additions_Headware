@@ -171,13 +171,13 @@ class Huenik_H_M_HawkFP2_AUS: FlightHelm_Base
 	hiddenSelectionsTextures[]=
 	{
 		"Hue_Additions_Headware\Data\Helmets\huenik_helmet_co.paa",
-		"Hue_Additions_Headware\Data\Hawkeye_patches_co.paa",
+		"Hue_Additions_Headware\Data\Hawkeye_patches_V2_co.paa",
 		"Hue_Additions_Headware\Data\AusFlag_backPatches_co.paa"
 	};
 	hiddenSelectionsMaterials[]=
 	{
 		"\rhsusf\addons\rhsusf_infantry2\gear\head\hgu56\data\rhs_hgu56.rvmat",
-		"Hue_Additions_Headware\Data\Hawkeye.rvmat",
+		"Hue_Additions_Headware\Data\Hawkeye_V2.rvmat",
 		"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 	};
 	class ItemInfo: ItemInfo
@@ -196,7 +196,7 @@ class Huenik_H_M_HawkFP2_AUS: FlightHelm_Base
 		name="Huenik";
 		type="Mask";
 		backPatches="AUS_IR";
-		frontPatches="HawkFP";
+		frontPatches="HawkFP2";
 	};
 };
 
@@ -515,13 +515,13 @@ class Zero_H_M_HawkFP2_AUS: FlightHelm_Base
 	hiddenSelectionsTextures[]=
 	{
 		"Hue_Additions_Headware\Data\Helmets\Zero_helmet_co.paa",
-		"Hue_Additions_Headware\Data\Hawkeye_patches_co.paa",
+		"Hue_Additions_Headware\Data\Hawkeye_patches_V2_co.paa",
 		"Hue_Additions_Headware\Data\AusFlag_backPatches_co.paa"
 	};
 	hiddenSelectionsMaterials[]=
 	{
 		"\rhsusf\addons\rhsusf_infantry2\gear\head\hgu56\data\rhs_hgu56.rvmat",
-		"Hue_Additions_Headware\Data\Hawkeye.rvmat",
+		"Hue_Additions_Headware\Data\Hawkeye_V2.rvmat",
 		"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 	};
 	class ItemInfo: ItemInfo
@@ -540,7 +540,7 @@ class Zero_H_M_HawkFP2_AUS: FlightHelm_Base
 		name="Zero";
 		type="Mask";
 		backPatches="AUS_IR";
-		frontPatches="HawkFP";
+		frontPatches="HawkFP2";
 	};
 };
 
@@ -859,13 +859,13 @@ class Echo_H_M_HawkFP2_AUS: FlightHelm_Base
 	hiddenSelectionsTextures[]=
 	{
 		"Hue_Additions_Headware\Data\Helmets\echo_helmet_co.paa",
-		"Hue_Additions_Headware\Data\Hawkeye_patches_co.paa",
+		"Hue_Additions_Headware\Data\Hawkeye_patches_V2_co.paa",
 		"Hue_Additions_Headware\Data\AusFlag_backPatches_co.paa"
 	};
 	hiddenSelectionsMaterials[]=
 	{
 		"\rhsusf\addons\rhsusf_infantry2\gear\head\hgu56\data\rhs_hgu56.rvmat",
-		"Hue_Additions_Headware\Data\Hawkeye.rvmat",
+		"Hue_Additions_Headware\Data\Hawkeye_V2.rvmat",
 		"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 	};
 	class ItemInfo: ItemInfo
@@ -884,7 +884,7 @@ class Echo_H_M_HawkFP2_AUS: FlightHelm_Base
 		name="Echo";
 		type="Mask";
 		backPatches="AUS_IR";
-		frontPatches="HawkFP";
+		frontPatches="HawkFP2";
 	};
 };
 
@@ -1203,13 +1203,13 @@ class Bobby_H_M_HawkFP2_AUS: FlightHelm_Base
 	hiddenSelectionsTextures[]=
 	{
 		"Hue_Additions_Headware\Data\Helmets\Bobby_helmet_co.paa",
-		"Hue_Additions_Headware\Data\Hawkeye_patches_co.paa",
+		"Hue_Additions_Headware\Data\Hawkeye_patches_V2_co.paa",
 		"Hue_Additions_Headware\Data\AusFlag_backPatches_co.paa"
 	};
 	hiddenSelectionsMaterials[]=
 	{
 		"\rhsusf\addons\rhsusf_infantry2\gear\head\hgu56\data\rhs_hgu56.rvmat",
-		"Hue_Additions_Headware\Data\Hawkeye.rvmat",
+		"Hue_Additions_Headware\Data\Hawkeye_V2.rvmat",
 		"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 	};
 	class ItemInfo: ItemInfo
@@ -1228,7 +1228,7 @@ class Bobby_H_M_HawkFP2_AUS: FlightHelm_Base
 		name="Bobby";
 		type="Mask";
 		backPatches="AUS_IR";
-		frontPatches="HawkFP";
+		frontPatches="HawkFP2";
 	};
 };
 
@@ -1547,13 +1547,13 @@ class Dom_H_M_HawkFP2_AUS: FlightHelm_Base
 	hiddenSelectionsTextures[]=
 	{
 		"Hue_Additions_Headware\Data\Helmets\domscar_helmet_co.paa",
-		"Hue_Additions_Headware\Data\Hawkeye_patches_co.paa",
+		"Hue_Additions_Headware\Data\Hawkeye_patches_V2_co.paa",
 		"Hue_Additions_Headware\Data\AusFlag_backPatches_co.paa"
 	};
 	hiddenSelectionsMaterials[]=
 	{
 		"\rhsusf\addons\rhsusf_infantry2\gear\head\hgu56\data\rhs_hgu56.rvmat",
-		"Hue_Additions_Headware\Data\Hawkeye.rvmat",
+		"Hue_Additions_Headware\Data\Hawkeye_V2.rvmat",
 		"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 	};
 	class ItemInfo: ItemInfo
@@ -1572,7 +1572,7 @@ class Dom_H_M_HawkFP2_AUS: FlightHelm_Base
 		name="Dom";
 		type="Mask";
 		backPatches="AUS_IR";
-		frontPatches="HawkFP";
+		frontPatches="HawkFP2";
 	};
 };
 
@@ -1891,13 +1891,13 @@ class WarCryme_H_M_HawkFP2_AUS: FlightHelm_Base
 	hiddenSelectionsTextures[]=
 	{
 		"Hue_Additions_Headware\Data\Helmets\WarCryme_helmet_co.paa",
-		"Hue_Additions_Headware\Data\Hawkeye_patches_co.paa",
+		"Hue_Additions_Headware\Data\Hawkeye_patches_V2_co.paa",
 		"Hue_Additions_Headware\Data\AusFlag_backPatches_co.paa"
 	};
 	hiddenSelectionsMaterials[]=
 	{
 		"\rhsusf\addons\rhsusf_infantry2\gear\head\hgu56\data\rhs_hgu56.rvmat",
-		"Hue_Additions_Headware\Data\Hawkeye.rvmat",
+		"Hue_Additions_Headware\Data\Hawkeye_V2.rvmat",
 		"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 	};
 	class ItemInfo: ItemInfo
@@ -1916,7 +1916,7 @@ class WarCryme_H_M_HawkFP2_AUS: FlightHelm_Base
 		name="War";
 		type="Mask";
 		backPatches="AUS_IR";
-		frontPatches="HawkFP";
+		frontPatches="HawkFP2";
 	};
 };
 
@@ -2235,13 +2235,13 @@ class Pug_H_M_HawkFP2_AUS: FlightHelm_Base
 	hiddenSelectionsTextures[]=
 	{
 		"Hue_Additions_Headware\Data\Helmets\Pug_helmet_co.paa",
-		"Hue_Additions_Headware\Data\Hawkeye_patches_co.paa",
+		"Hue_Additions_Headware\Data\Hawkeye_patches_V2_co.paa",
 		"Hue_Additions_Headware\Data\AusFlag_backPatches_co.paa"
 	};
 	hiddenSelectionsMaterials[]=
 	{
 		"\rhsusf\addons\rhsusf_infantry2\gear\head\hgu56\data\rhs_hgu56.rvmat",
-		"Hue_Additions_Headware\Data\Hawkeye.rvmat",
+		"Hue_Additions_Headware\Data\Hawkeye_V2.rvmat",
 		"Hue_Additions_Headware\Data\AusFlag_backPatches.rvmat"
 	};
 	class ItemInfo: ItemInfo
@@ -2260,7 +2260,7 @@ class Pug_H_M_HawkFP2_AUS: FlightHelm_Base
 		name="Pug";
 		type="Mask";
 		backPatches="AUS_IR";
-		frontPatches="HawkFP";
+		frontPatches="HawkFP2";
 	};
 };
 
