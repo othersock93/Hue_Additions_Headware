@@ -522,7 +522,7 @@ class NAME_H_M_HawkFP2_AUS: FlightHelm_Base
 	};
 };
 
-/// Helmet, Mask, Visor ///
+/// Helmet, Mask, and Visor ///
 
 class NAME_H_M_V_NoFP_NoBP: FlightHelm_Base
 {
