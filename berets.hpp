@@ -134,7 +134,7 @@ class 207_Beret2_Base: H_Beret_02
 	};
 	hiddenSelectionsMaterials[]=
 	{
-		"Hue_Additions_Headware\data\berets\headgear_207beret.rvmat"
+		"Hue_Additions_Headware\data\berets\headgear_207beret_V2.rvmat"
 	};
 	editorCategory="EdCat_Equipment";
 	editorSubcategory="EdSubcat_Hats";
