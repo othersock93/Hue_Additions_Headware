@@ -214,14 +214,14 @@ class CfgWeapons
 		};
 	};
 
-#include "huenik.hpp"
-#include "zero.hpp"
-#include "echo.hpp"
-#include "bobby.hpp"
-#include "dom.hpp"
-#include "war.hpp"
-#include "pug.hpp"
-#include "berets.hpp"
+#include "config\huenik.hpp"
+#include "config\zero.hpp"
+#include "config\echo.hpp"
+#include "config\bobby.hpp"
+#include "config\dom.hpp"
+#include "config\war.hpp"
+#include "config\pug.hpp"
+#include "config\berets.hpp"
 };
 
 class cfgMods
