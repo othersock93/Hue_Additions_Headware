@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="Hue_Additions_Headware\data\berets\headgear_207beret_smdi.paa";
+	texture="Hue_Additions_Headware\data\berets\headgear_207beret_V2_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{
